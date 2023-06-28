@@ -6,7 +6,7 @@ def pascal_triangle(n):
     '''
     returns a list of integers representing the pascal triangle of a give integer input
     '''
-    if n <= 0:
+    if type(n) is not int or n <= 0:
         return []
     triangle = [[1]]
     while len(triangle) < n:
